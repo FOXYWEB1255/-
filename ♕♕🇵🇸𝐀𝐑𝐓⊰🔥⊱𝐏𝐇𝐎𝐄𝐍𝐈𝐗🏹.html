@@ -1,0 +1,279 @@
+<meta name='viewport' content='width=device-width, initial-scale=1'/><!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <title>🇵🇸𝐀𝐑𝐓⊰🔥⊱𝐏𝐇𝐎𝐄𝐍𝐈𝐗🏹 - سجل الأسماء السيبراني</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700&display=swap');
+        
+        :root {
+            --neon-pink: #ff2a6d;
+            --neon-blue: #05d9e8;
+            --neon-purple: #d300c5;
+            --cyber-dark: #0d0221;
+            --cyber-light: #f5f5f5;
+        }
+        
+        body {
+            font-family: 'Tajawal', sans-serif;
+            background: var(--cyber-dark);
+            color: var(--cyber-light);
+            text-align: center;
+            padding: 20px;
+            background-image: 
+                radial-gradient(circle at 10% 20%, rgba(255, 42, 109, 0.1) 0%, transparent 20%),
+                radial-gradient(circle at 90% 80%, rgba(5, 217, 232, 0.1) 0%, transparent 20%);
+            min-height: 100vh;
+        }
+        
+        .container {
+            max-width: 700px;
+            margin: auto;
+            background: rgba(13, 2, 33, 0.8);
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 0 20px var(--neon-purple),
+                        0 0 40px rgba(211, 0, 197, 0.3);
+            border: 1px solid var(--neon-blue);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .container::before {
+            content: "";
+            position: absolute;
+            top: -2px;
+            left: -2px;
+            right: -2px;
+            bottom: -2px;
+            z-index: -1;
+            background: linear-gradient(45deg, 
+                var(--neon-pink), 
+                var(--neon-purple), 
+                var(--neon-blue));
+            background-size: 200% 200%;
+            animation: borderGlow 3s ease infinite;
+            border-radius: 16px;
+        }
+        
+        @keyframes borderGlow {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+        
+        h1 {
+            color: var(--neon-blue);
+            font-size: 2.5rem;
+            margin-bottom: 30px;
+            text-shadow: 0 0 10px var(--neon-blue),
+                         0 0 20px rgba(5, 217, 232, 0.5);
+            letter-spacing: 2px;
+        }
+        
+        .input-group {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            margin-bottom: 25px;
+        }
+        
+        input {
+            padding: 12px 15px;
+            background: rgba(255, 255, 255, 0.1);
+            border: 1px solid var(--neon-purple);
+            border-radius: 8px;
+            color: white;
+            font-size: 1rem;
+            transition: all 0.3s;
+        }
+        
+        input:focus {
+            outline: none;
+            border-color: var(--neon-blue);
+            box-shadow: 0 0 10px var(--neon-blue);
+        }
+        
+        input::placeholder {
+            color: rgba(255, 255, 255, 0.5);
+        }
+        
+        button {
+            padding: 12px 25px;
+            background: linear-gradient(45deg, var(--neon-pink), var(--neon-purple));
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 1rem;
+            font-weight: bold;
+            transition: all 0.3s;
+            box-shadow: 0 0 15px rgba(255, 42, 109, 0.5);
+            margin-top: 10px;
+        }
+        
+        button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 0 20px var(--neon-pink);
+        }
+        
+        #namesList {
+            margin-top: 30px;
+            text-align: right;
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 15px;
+        }
+        
+        .name-card {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 15px;
+            border-radius: 10px;
+            color: white;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: all 0.3s;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .name-card::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 5px;
+            height: 100%;
+            background: linear-gradient(to bottom, var(--neon-pink), var(--neon-blue));
+        }
+        
+        .name-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(5, 217, 232, 0.3);
+            border-color: var(--neon-blue);
+        }
+        
+        .name-card strong {
+            color: var(--neon-blue);
+            display: block;
+            margin-bottom: 5px;
+            font-size: 1.2rem;
+        }
+        
+        .name-card small {
+            color: var(--neon-pink);
+            font-size: 0.9rem;
+        }
+        
+        .cyber-logo {
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+            display: inline-block;
+            background: linear-gradient(45deg, var(--neon-pink), var(--neon-blue));
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            text-shadow: 0 0 10px rgba(255, 42, 109, 0.3);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="cyber-logo">🇵🇸𝐀𝐑𝐓⊰🔥⊱𝐏𝐇𝐎𝐄𝐍𝐈𝐗🏹</div>
+        <h1>سجل الأسماء السيبراني</h1>
+        
+        <div class="input-group">
+            <input type="text" id="nameInput" placeholder="الاسم الكامل">
+            <input type="text" id="nickInput" placeholder="اللقب (اختياري)">
+        </div>
+        
+        <button onclick="addName()">إضافة إلى النظام</button>
+        
+        <div id="namesList"></div>
+    </div>
+
+    <script>
+        // تحميل الأسماء المحفوظة عند فتح الصفحة
+        document.addEventListener('DOMContentLoaded', loadNames);
+        
+        function addName() {
+            const name = document.getElementById('nameInput').value.trim();
+            const nick = document.getElementById('nickInput').value.trim();
+            
+            if (name) {
+                // إنشاء بطاقة الاسم
+                const nameCard = document.createElement('div');
+                nameCard.className = 'name-card';
+                nameCard.innerHTML = `
+                    <strong>${name}</strong>
+                    ${nick ? `<small>${nick}</small>` : ''}
+                `;
+                
+                // إضافة تأثير عند الإدراج
+                nameCard.style.opacity = '0';
+                nameCard.style.transform = 'translateY(20px)';
+                document.getElementById('namesList').prepend(nameCard);
+                
+                // إضافة تأثير ظهور
+                setTimeout(() => {
+                    nameCard.style.transition = 'all 0.5s ease';
+                    nameCard.style.opacity = '1';
+                    nameCard.style.transform = 'translateY(0)';
+                }, 10);
+                
+                // حفظ الأسماء في Local Storage
+                saveNames();
+                
+                // مسح الحقول بعد الإضافة
+                document.getElementById('nameInput').value = '';
+                document.getElementById('nickInput').value = '';
+                
+                // إضافة صوت أو تأثير
+                const audio = new Audio('https://assets.mixkit.co/sfx/preview/mixkit-arcade-game-jump-coin-216.mp3');
+                audio.play().catch(e => console.log('لا يمكن تشغيل الصوت: ', e));
+            } else {
+                alert('الرجاء إدخال اسم صحيح!');
+            }
+        }
+        
+        function saveNames() {
+            const namesContainer = document.getElementById('namesList');
+            const names = [];
+            
+            // جمع كل الأسماء والالقاب
+            document.querySelectorAll('.name-card').forEach(card => {
+                const name = card.querySelector('strong').textContent;
+                const nickElement = card.querySelector('small');
+                const nick = nickElement ? nickElement.textContent : '';
+                names.push({name, nick});
+            });
+            
+            // حفظ كمصفوفة JSON
+            localStorage.setItem('cyberNamesData', JSON.stringify(names));
+        }
+        
+        function loadNames() {
+            const savedData = localStorage.getItem('cyberNamesData');
+            if (savedData) {
+                try {
+                    const names = JSON.parse(savedData);
+                    const namesList = document.getElementById('namesList');
+                    namesList.innerHTML = '';
+                    
+                    names.forEach(item => {
+                        const nameCard = document.createElement('div');
+                        nameCard.className = 'name-card';
+                        nameCard.innerHTML = `
+                            <strong>${item.name}</strong>
+                            ${item.nick ? `<small>${item.nick}</small>` : ''}
+                        `;
+                        namesList.appendChild(nameCard);
+                    });
+                } catch (e) {
+                    console.error('خطأ في تحميل البيانات:', e);
+                }
+            }
+        }
+    </script>
+</body>
+</html>
